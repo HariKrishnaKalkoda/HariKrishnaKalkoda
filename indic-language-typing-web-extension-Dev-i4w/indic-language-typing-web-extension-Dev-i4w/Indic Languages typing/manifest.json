@@ -1,0 +1,23 @@
+{
+
+  "manifest_version": 2,
+  "name": "Indic Languages",
+  "version": "0.0.1",
+
+  "description": "allow user to convert a word into any language in the same website without going to new website for translation",
+  "homepage_url": "https://code.swecha.org/indian-languages/indic-language-typing-web-extension",
+  "icons": {
+    "48": "icons/icon.jpg"
+  },
+
+  "permissions": [
+    "activeTab"
+  ],
+
+  "browser_action": {
+    "default_icon": "icons/icon.jpg",
+    "default_title": "Indic Languages",
+    "default_popup": "popup/typing.html"
+  }
+
+}

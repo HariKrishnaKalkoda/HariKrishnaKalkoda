@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="te">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="typing.css"/>
+  </head>
+
+  <body>
+  	<form>
+  		<label for="Languages">Select language:</label>
+  		<select id="Language" onchange="myFunction()">
+  			<option value="Select Language" selected default>Select language</option>
+  			<option value="Hindi">Hindi</option>
+  			<option value="Telugu">Telugu</option>
+  			<option value="Tamil">Tamil</option>
+  			<option value="Malayalam">Malayalam</option>
+  			<option value="Kannada">Kannada</option>
+  			<option value="Marathi">Marathi</option>
+  		</select>
+  	</form>
+  	<p id="selected-language"></p>
+  	<div id="pagebody">
+  		<div id="main">
+			<div id="controls">
+				<input type="radio" name="mode" id="fly" value="2" checked="checked" onclick="vSetMode(this.value);"><label for="fly">Immediate</label>
+				<input type="radio" name="mode" id="demand" value="0" onclick="vSetMode(this.value);"><label for="demand" title="డౌన్అరో నొక్కినప్పుడు" style="margin-right:24px;">On click</label>
+			</div>
+  			<form action="">
+  				<div id="inputarea">
+  					
+  					<p><b>English:</b></p>
+
+  					<textarea rows="3" cols="40" name="txtInput" id="txtInput" spellcheck="false" autocorrect="off" autocapitalize="off" placeholder="type something in English...."></textarea>
+
+  				</div>
+  				<!--<input type="button" value="↓" onfocus="vTransform();vSelectIt();" onclick="vTransform();vSelectIt();" id="btnTransform" accesskey="t">-->
+  				<div id="outputarea">
+  					<a id="googlesearch" class="searches" href="http://www.google.co.in/" accesskey="g" target="_blank">
+  					</a>
+  					<p><b>Indic Language:</b></p>
+  					<textarea rows="3" cols="40" name="txtOutput" id="txtOutput" placeholder="పైన పెట్టెలో టైపుచేసిన తర్వాత TABను నొక్కండి. ఈ పెట్టెలో సందేశం మీకోసం సెలక్ట్ చేసుకోబడుతుంది."></textarea>
+  				</div>
+  		</div>
+  	</div>
+  	<script src="js/typing.js"></script>
+  	<script type="text/javascript" src="js/Padma.js"></script>
+  	<script type="text/javascript" src="js/Shared.js"></script>
+  	<script type="text/javascript" src="js/Telugu.js"></script>
+  	<script type="text/javascript" src="js/Unicode.js"></script>
+  	<script type="text/javascript" src="js/syllable.js"></script>
+  	<script type="text/javascript" src="js/Rts.js"></script>
+  	<script type="text/javascript" src="js/parser.js"></script>
+  	<script type="text/javascript" src="js/RTSparser.js"></script>
+  	<script type="text/javascript" src="js/Transformer.js"></script>
+  	<script type="text/javascript" src="js/RTSTransformer.js"></script>
+
+  	<script type="text/javascript" src="js/onfunctions.js"></script>
+
+
+  </body>
+
+</html>
